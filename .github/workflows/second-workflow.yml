@@ -3,16 +3,16 @@ name: second workflow
 on: push
 
 jobs:
-  hello-job: 
-  runs-on: ubuntu-latest
+  hello-job:
+    runs-on: ubuntu-latest
 
-  steps:
-    -name: "welcome"
-    run: echo "Welcome Divesh"
+    steps:
+      - name: "welcome"
+        run: echo "Welcome Divesh"
 
-  bye-job: 
-  runs-on: ubuntu-latest
+  bye-job:
+    runs-on: ubuntu-latest
 
-  steps:
-    -name: "Bye"
-    run: echo "Bye Divesh"
+    steps:
+      - name: "Bye"
+        run: echo "Bye Divesh"
