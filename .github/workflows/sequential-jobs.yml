@@ -24,6 +24,7 @@ jobs:
           run: test -f script.js
 
     validate-code:
+    # sequentiontial job first these two jobs validate-html, validate-js will be completed then validate code
         needs: [validate-html, validate-js]
         runs-on: Ubuntu-latest
 
